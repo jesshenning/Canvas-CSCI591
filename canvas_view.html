@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Adv. Web Programming - Homework #4</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <script type="text/javascript" src="js/wordstuff.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    </head>
+    
+    
+    <body>
+
+        
+        <canvas id="myCanvas" width="1300" height="150"
+            style="border:1px solid #000000;">
+        </canvas>
+        
+        <canvas id="myCanvas2" width="1000" height="550"
+            style="border:1px solid #000000;">
+        </canvas>
+        
+        <div id="report"></div>
+        
+        <div id="options">
+            <label>Score: </label>
+            <label id="score"></label>
+            <br>
+            <button id="btnCheck" type="button" class="btn btn-default">Start Game</button>
+            <button id="again" type="button" class="btn btn-default" onclick="goAgain()">Go Again</button>
+
+
+            <div id="result">User</div>
+            <div id="result2">High Score</div>
+            <p>
+                <input id="userInput" value="Enter your name">
+
+                <button type="button" class="btn btn-default" onclick="saveStuff();">Save Score</button>
+                <button type="button" class="btn btn-default" onclick="retrieveStuff();">Update High Score</button>
+            </p>
+
+            <button id='home_page' type="button" class='btn btn-default'>Home Page</button>
+        </div>
+        
+
+    
+    
+    
+    <script src="js/canvas.js"></script>
+    <script src="js/navigation.js"></script>
+    
+  </body>
+</html>
